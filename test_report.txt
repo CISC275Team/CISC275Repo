@@ -25,9 +25,10 @@ Browserslist: caniuse-lite is outdated. Please run:
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
   console.error
-    Warning: validateDOMNesting(...): <p> cannot appear as a descendant of <p>.
+    Warning: validateDOMNesting(...): <ul> cannot appear as a descendant of <p>.
+        at ul
         at p
-        at p
+        at header
         at div
         at App
 
@@ -40,7 +41,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (107 ms)
+  ✕ renders the course name somewhere (131 ms)
 
   ● renders the course name somewhere
 
@@ -78,38 +79,46 @@ FAIL src/App.test.tsx
                 [36m</div>[39m
               [36m</div>[39m
             [36m</p>[39m
+            [36m<p>[39m
+              [36m<ul[39m
+                [33mclass[39m=[32m"horizontal-list"[39m
+              [36m>[39m
+                [36m<li>[39m
+                  [0m Aidan Bell [0m
+                [36m</li>[39m
+                [36m<li>[39m
+                  [0mLawrence Collins [0m
+                [36m</li>[39m
+                [36m<li>[39m
+                  [0mNicky Reigel[0m
+                [36m</li>[39m
+                [36m<li>[39m
+                  [0mMelvin Rau[0m
+                [36m</li>[39m
+                [36m<li>[39m
+                  [0mVictor Vasquez[0m
+                [36m</li>[39m
+              [36m</ul>[39m
+            [36m</p>[39m
           [36m</header>[39m
           [36m<p>[39m
-            [0mAidan Bell Edit [0m
             [36m<code>[39m
               [0msrc/App.tsx[0m
             [36m</code>[39m
             [0m and save. This page will automatically reload.[0m
-            [36m<p>[39m
-              [0mLawrence Collins [0m
-            [36m</p>[39m
-            [36m<p>[39m
-              [0mNicky Reigel[0m
-            [36m</p>[39m
-            [36m<p>[39m
-              [0mMelvin Rau[0m
-            [36m</p>[39m
-            [36m<p>[39m
-              [0mVictor Vasquez[0m
-            [36m</p>[39m
           [36m</p>[39m
           [36m<div[39m
             [33mclass[39m=[32m"App-blockleft"[39m
           [36m>[39m
             [36m<p>[39m
-              [0msample block[0m
+              [0msample block left[0m
             [36m</p>[39m
           [36m</div>[39m
           [36m<div[39m
             [33mclass[39m=[32m"App-blockright"[39m
           [36m>[39m
             [36m<p>[39m
-              [0msample block[0m
+              [0msample block right[0m
             [36m</p>[39m
           [36m</div>[39m
         [36m</div>[39m
@@ -144,5 +153,5 @@ All files |      75 |      100 |   66.66 |      75 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.307 s
+Time:        2.592 s
 Ran all test suites.
