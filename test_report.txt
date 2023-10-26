@@ -40,7 +40,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (98 ms)
+  ✕ renders the course name somewhere (107 ms)
 
   ● renders the course name somewhere
 
@@ -98,6 +98,20 @@ FAIL src/App.test.tsx
               [0mVictor Vasquez[0m
             [36m</p>[39m
           [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"App-blockleft"[39m
+          [36m>[39m
+            [36m<p>[39m
+              [0msample block[0m
+            [36m</p>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"App-blockright"[39m
+          [36m>[39m
+            [36m<p>[39m
+              [0msample block[0m
+            [36m</p>[39m
+          [36m</div>[39m
         [36m</div>[39m
       [36m</div>[39m
     [36m</body>[39m
@@ -130,5 +144,5 @@ All files |      75 |      100 |   66.66 |      75 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        1.837 s
+Time:        2.307 s
 Ran all test suites.
