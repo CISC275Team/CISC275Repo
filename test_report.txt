@@ -41,7 +41,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (131 ms)
+  ✕ renders the course name somewhere (100 ms)
 
   ● renders the course name somewhere
 
@@ -75,7 +75,7 @@ FAIL src/App.test.tsx
                 [36m<div>[39m
                   [0mWelcome [0m
                   [0mnew student[0m
-                  [0m here you will create you potential class schedule.[0m
+                  [0m, here you will create you potential class schedule.[0m
                 [36m</div>[39m
               [36m</div>[39m
             [36m</p>[39m
@@ -108,18 +108,26 @@ FAIL src/App.test.tsx
             [0m and save. This page will automatically reload.[0m
           [36m</p>[39m
           [36m<div[39m
-            [33mclass[39m=[32m"App-blockleft"[39m
+            [33mclass[39m=[32m"div-alightleft"[39m
           [36m>[39m
-            [36m<p>[39m
-              [0msample block left[0m
-            [36m</p>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"App-blockleft"[39m
+            [36m>[39m
+              [36m<p>[39m
+                [0msample block left[0m
+              [36m</p>[39m
+            [36m</div>[39m
           [36m</div>[39m
           [36m<div[39m
-            [33mclass[39m=[32m"App-blockright"[39m
+            [33mclass[39m=[32m"div-alignright"[39m
           [36m>[39m
-            [36m<p>[39m
-              [0msample block right[0m
-            [36m</p>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"App-blockright"[39m
+            [36m>[39m
+              [36m<p>[39m
+                [0msample block right[0m
+              [36m</p>[39m
+            [36m</div>[39m
           [36m</div>[39m
         [36m</div>[39m
       [36m</div>[39m
@@ -153,5 +161,5 @@ All files |      75 |      100 |   66.66 |      75 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.592 s
+Time:        2.196 s
 Ran all test suites.
