@@ -41,7 +41,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (100 ms)
+  ✕ renders the course name somewhere (147 ms)
 
   ● renders the course name somewhere
 
@@ -151,15 +151,20 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
-----------|---------|----------|---------|---------|-------------------
-File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
-----------|---------|----------|---------|---------|-------------------
-All files |      75 |      100 |   66.66 |      75 |                   
- App.tsx  |     100 |      100 |     100 |     100 |                   
- Name.tsx |   66.66 |      100 |      50 |   66.66 | 8                 
-----------|---------|----------|---------|---------|-------------------
+----------------|---------|----------|---------|---------|-------------------
+File            | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------------|---------|----------|---------|---------|-------------------
+All files       |      75 |      100 |   66.66 |      75 |                   
+ src            |      75 |      100 |   66.66 |      75 |                   
+  App.tsx       |     100 |      100 |     100 |     100 |                   
+  Name.tsx      |   66.66 |      100 |      50 |   66.66 | 8                 
+ src/interfaces |       0 |        0 |       0 |       0 |                   
+  course.ts     |       0 |        0 |       0 |       0 |                   
+  degreeplan.ts |       0 |        0 |       0 |       0 |                   
+  semester.ts   |       0 |        0 |       0 |       0 |                   
+----------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.196 s
+Time:        2.805 s
 Ran all test suites.
