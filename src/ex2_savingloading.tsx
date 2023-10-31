@@ -1,11 +1,15 @@
 //Example:
 import React, { useState } from "react";
-import { Button, Form } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import { json } from "stream/consumers";
 import { DegreePlan } from "./interfaces/degreeplan";
 import degreeplan_json from "./ex2_dummydata.json";
 
+//have some variable that keeps track of id's, notice from the json file we already have id's 1 and 2 taken, so we would start from there
+let idCount: number = 2;
+
 //load in json data
+//dp = degreeplan
 const DEGREEPLANS: DegreePlan[] = degreeplan_json.map(
     (dp): DegreePlan => ({ ...dp })
 );
@@ -21,8 +25,17 @@ if (previousData !== null) {
 }
 
 export function DegreePlanView(): JSX.Element {
-    const [degreePlan, setdegreePlan] = useState<DegreePlan[]>(loaded_data);
-    const showData = () => console.log(degreePlan);
+    const [degreePlans, setdegreePlan] = useState<DegreePlan[]>(loaded_data);
+    const showData = () => console.log(degreePlans);
+    //check if newDp does not exist and add it
+    function addDegreePlan(newDp: DegreePlan) {
+        const dpExist = degreePlans.find(
+            (dp: DegreePlan): boolean => dp.id === newDp.id
+        );
+        if (dpExist === undefined) {
+            setdegreePlan([...degreePlans, newDp]);
+        }
+    }
     return (
         <div>
             <Button onClick={showData}> Show JSON</Button>
