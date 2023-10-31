@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.css";
 import { WelcomeMessage } from "./Name";
+import { GiveAttempts } from "./ex_savingloading";
+import { DegreePlanView } from "./ex2_savingloading";
 
 function App(): JSX.Element {
     return (
@@ -29,6 +31,12 @@ function App(): JSX.Element {
             </div>
             <div className="App-blockright">
                 <p>sample block right</p>
+            </div>
+            <div>
+                <GiveAttempts></GiveAttempts>
+            </div>
+            <div>
+                <DegreePlanView></DegreePlanView>
             </div>
         </div>
     );
