@@ -1,12 +1,14 @@
 //Example:
 import React, { useState } from "react";
-import { Button } from "react-bootstrap";
+import { Button, Row, Col } from "react-bootstrap";
 import { json } from "stream/consumers";
 import { DegreePlan } from "./interfaces/degreeplan";
 import degreeplan_json from "./ex2_dummydata.json";
+import { AddDegreePlanModule } from "./ex2_component";
+import { Semester } from "./interfaces/semester";
+import { Course } from "./interfaces/course";
 
 //have some variable that keeps track of id's, notice from the json file we already have id's 1 and 2 taken, so we would start from there
-let idCount: number = 2;
 
 //load in json data
 //dp = degreeplan
@@ -25,20 +27,108 @@ if (previousData !== null) {
 }
 
 export function DegreePlanView(): JSX.Element {
-    const [degreePlans, setdegreePlan] = useState<DegreePlan[]>(loaded_data);
-    const showData = () => console.log(degreePlans);
-    //check if newDp does not exist and add it
-    function addDegreePlan(newDp: DegreePlan) {
-        const dpExist = degreePlans.find(
-            (dp: DegreePlan): boolean => dp.id === newDp.id
-        );
-        if (dpExist === undefined) {
-            setdegreePlan([...degreePlans, newDp]);
-        }
+    const [degreePlans, setdegreePlans] = useState<DegreePlan[]>(loaded_data);
+    const [showAddModal, setShowAddModal] = useState<boolean>(false);
+    //handles opening and closing the popup (modal)
+    const handleCloseModal = () => setShowAddModal(false);
+    const handleShowModal = () => setShowAddModal(true);
+
+    //add new dp
+    function addDegreePlan(title: string) {
+        setdegreePlans([
+            ...degreePlans,
+            { title: title, id: 0, totalCredits: 0, semestersList: [] }
+        ]);
+    }
+
+    //allow the user to save the data to local storage
+    function saveData() {
+        localStorage.setItem(SAVE_KEY, JSON.stringify(degreePlans));
     }
     return (
         <div>
-            <Button onClick={showData}> Show JSON</Button>
+            <h2>Degree Plans</h2>
+            <Row>
+                <Col>
+                    {degreePlans.map((dp: DegreePlan) => (
+                        <div key={dp.title} style={{ marginBottom: "4px" }}>
+                            <h2>{dp.title}</h2>
+                            <p>ID: {dp.id}</p>
+                            <p>Total Credits: {dp.totalCredits}</p>
+                            <Row>
+                                <Col>
+                                    {dp.semestersList.map(
+                                        (semester: Semester) => (
+                                            <div
+                                                key={semester.title}
+                                                style={{ marginBottom: "4px" }}
+                                            >
+                                                <h5>{semester.title}</h5>
+                                                <p>
+                                                    Semester Total Credits:{" "}
+                                                    {semester.totalCredits}
+                                                </p>
+                                                <Row>
+                                                    <Col>
+                                                        {semester.classesList.map(
+                                                            (
+                                                                course: Course
+                                                            ) => (
+                                                                <div
+                                                                    key={
+                                                                        course.classTitle
+                                                                    }
+                                                                    style={{
+                                                                        marginBottom:
+                                                                            "4px"
+                                                                    }}
+                                                                >
+                                                                    <h5>
+                                                                        {
+                                                                            course.classTitle
+                                                                        }
+                                                                    </h5>
+                                                                    <p>
+                                                                        Course
+                                                                        Credits:{" "}
+                                                                        {
+                                                                            course.credits
+                                                                        }
+                                                                    </p>
+                                                                    <p>
+                                                                        Course
+                                                                        Credits:{" "}
+                                                                        {
+                                                                            course.classCode
+                                                                        }
+                                                                    </p>
+                                                                </div>
+                                                            )
+                                                        )}
+                                                    </Col>
+                                                </Row>
+                                            </div>
+                                        )
+                                    )}
+                                </Col>
+                            </Row>
+                        </div>
+                    ))}
+                </Col>
+            </Row>
+            <Button className="add_btn" onClick={handleShowModal}>
+                Add New Quiz
+            </Button>
+            {showAddModal && (
+                <AddDegreePlanModule
+                    show={showAddModal} //should be true until its not once the user clicks close
+                    handleClose={handleCloseModal} //close modal since it is now open
+                    addDp={addDegreePlan}
+                ></AddDegreePlanModule>
+            )}
+            <Button onClick={saveData}>Save</Button>
         </div>
     );
 }
+
+//{dp.semestersList.map((semester: Semester) =>())}

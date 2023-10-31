@@ -3,11 +3,8 @@
 import React from "react";
 import { useState } from "react";
 import { Button, Form, Modal, Col, Row } from "react-bootstrap";
-import { DegreePlan } from "./interfaces/degreeplan";
-import { Course } from "./interfaces/course";
-import { Semester } from "./interfaces/semester";
 
-export function AddQuizModal({
+export function AddDegreePlanModule({
     show,
     handleClose,
     addDp
@@ -16,7 +13,7 @@ export function AddQuizModal({
     show: boolean;
     handleClose: () => void;
     addDp: (title: string) => void;
-}) {
+}): JSX.Element {
     const [title, setTitle] = useState<string>("Example Title");
 
     const saveChanges = () => {
