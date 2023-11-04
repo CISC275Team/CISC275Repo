@@ -2,19 +2,16 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test --coverage
 
-Browserslist: caniuse-lite is outdated. Please run:
-  npx browserslist@latest --update-db
-  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
   console.error
     Warning: validateDOMNesting(...): <div> cannot appear as a descendant of <p>.
         at div
         at /home/runner/work/CISC275Repo/CISC275Repo/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
         at div
-        at WelcomeMessage (/home/runner/work/CISC275Repo/CISC275Repo/src/Name.tsx:5:29)
+        at WelcomeMessage (/home/runner/work/CISC275Repo/CISC275Repo/src/Name.tsx:5:37)
         at p
         at header
         at div
-        at App
+        at App (/home/runner/work/CISC275Repo/CISC275Repo/src/App.tsx:24:49)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -30,7 +27,7 @@ Browserslist: caniuse-lite is outdated. Please run:
         at p
         at header
         at div
-        at App
+        at App (/home/runner/work/CISC275Repo/CISC275Repo/src/App.tsx:24:49)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -41,7 +38,7 @@ Browserslist: caniuse-lite is outdated. Please run:
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (103 ms)
+  ✕ renders the course name somewhere (81 ms)
 
   ● renders the course name somewhere
 
@@ -101,14 +98,42 @@ FAIL src/App.test.tsx
               [36m</ul>[39m
             [36m</p>[39m
           [36m</header>[39m
-          [36m<p>[39m
-            [36m<code>[39m
-              [0msrc/App.tsx[0m
-            [36m</code>[39m
-            [0m and save. This page will automatically reload.[0m
-          [36m</p>[39m
+          [36m<div />[39m
+          [36m<a[39m
+            [33mdownload[39m=[32m"testexport"[39m
+            [33mhref[39m=[32m"data:text/csv;charset=utf-8,﻿\"First Name\",\"Last Name\"
+    \"Nicky\",\"Reigel\"
+    \"Aidan\",\"Bell\""[39m
+            [33mtarget[39m=[32m"_self"[39m
+          [36m>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mDownload CSV[0m
+            [36m</button>[39m
+          [36m</a>[39m
+          [36m<div />[39m
           [36m<div[39m
-            [33mclass[39m=[32m"div-alignleft"[39m
+            [33mstyle[39m=[32m"text-align: center;"[39m
+          [36m>[39m
+            [36m<h1>[39m
+              [0mCSV Degree Plan Import:[0m
+            [36m</h1>[39m
+            [36m<form>[39m
+              [36m<input[39m
+                [33maccept[39m=[32m".csv"[39m
+                [33mtype[39m=[32m"file"[39m
+              [36m/>[39m
+              [36m<button[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mImport[0m
+              [36m</button>[39m
+            [36m</form>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"div-alightleft"[39m
           [36m>[39m
             [36m<div[39m
               [33mclass[39m=[32m"App-blockleft"[39m
@@ -129,6 +154,12 @@ FAIL src/App.test.tsx
               [36m</p>[39m
             [36m</div>[39m
           [36m</div>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"btn btn-primary"[39m
+            [33mtype[39m=[32m"button"[39m
+          [36m>[39m
+            [0mSave Degree Plans[0m
+          [36m</button>[39m
         [36m</div>[39m
       [36m</div>[39m
     [36m</body>[39m
@@ -154,9 +185,10 @@ FAIL src/App.test.tsx
 -------------------|---------|----------|---------|---------|-------------------
 File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -------------------|---------|----------|---------|---------|-------------------
-All files          |   17.64 |        0 |   28.57 |   17.64 |                   
- src               |   17.64 |        0 |   28.57 |   17.64 |                   
-  App.tsx          |     100 |      100 |     100 |     100 |                   
+All files          |   39.02 |     12.5 |   35.71 |   39.02 |                   
+ src               |   39.02 |     12.5 |   35.71 |   39.02 |                   
+  App.tsx          |      75 |       50 |   66.66 |      75 | 21,29-30          
+  CSV.tsx          |   38.46 |    14.28 |      40 |   38.46 | 46-53,58          
   ImportExport.tsx |       0 |        0 |       0 |       0 | 5-24              
   Name.tsx         |   66.66 |      100 |      50 |   66.66 | 8                 
  src/interfaces    |       0 |        0 |       0 |       0 |                   
@@ -167,5 +199,5 @@ All files          |   17.64 |        0 |   28.57 |   17.64 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.273 s
+Time:        2.467 s
 Ran all test suites.
