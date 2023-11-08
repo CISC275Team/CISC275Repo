@@ -185,12 +185,13 @@ FAIL src/App.test.tsx
 -------------------|---------|----------|---------|---------|-------------------
 File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -------------------|---------|----------|---------|---------|-------------------
-All files          |   39.02 |     12.5 |   35.71 |   39.02 |                   
- src               |   39.02 |     12.5 |   35.71 |   39.02 |                   
+All files          |   17.02 |     4.16 |   35.71 |   17.02 |                   
+ src               |   17.02 |     4.16 |   35.71 |   17.02 |                   
   App.tsx          |      75 |       50 |   66.66 |      75 | 21,29-30          
   CSV.tsx          |   38.46 |    14.28 |      40 |   38.46 | 46-53,58          
   ImportExport.tsx |       0 |        0 |       0 |       0 | 5-24              
   Name.tsx         |   66.66 |      100 |      50 |   66.66 | 8                 
+  courseList.tsx   |       0 |        0 |     100 |       0 | 4-503             
  src/interfaces    |       0 |        0 |       0 |       0 |                   
   course.ts        |       0 |        0 |       0 |       0 |                   
   degreeplan.ts    |       0 |        0 |       0 |       0 |                   
@@ -199,5 +200,5 @@ All files          |   39.02 |     12.5 |   35.71 |   39.02 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.467 s
+Time:        2.678 s
 Ran all test suites.
