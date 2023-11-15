@@ -40,7 +40,7 @@
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (160 ms)
+  ✕ renders the course name somewhere (108 ms)
 
   ● renders the course name somewhere
 
@@ -265,16 +265,16 @@ STACK: TypeError: Duplicate declaration "Semester"
   7 |     semester,
   8 |     deleteSemester
   9 | }: {
-    at File.buildError [as buildCodeFrameError] (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/core/lib/transformation/file/file.js:249:12)
-    at Scope.checkBlockScopedCollisions (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/traverse/src/scope/index.ts:614:22)
-    at Scope.registerBinding (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/traverse/src/scope/index.ts:825:16)
-    at Scope.registerDeclaration (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/traverse/src/scope/index.ts:744:12)
-    at Object.apply (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/traverse/src/scope/index.ts:330:12)
-    at Object.call (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/traverse/src/visitors.ts:336:17)
-    at NodePath._call (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/traverse/src/path/context.ts:35:20)
-    at NodePath.call (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/traverse/src/path/context.ts:16:14)
-    at NodePath.visit (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/traverse/src/path/context.ts:94:31)
-    at TraversalContext.visitQueue (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/traverse/src/context.ts:144:16)
+    at File.buildCodeFrameError (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/core/lib/transformation/file/file.js:249:12)
+    at Scope.checkBlockScopedCollisions (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/traverse/lib/scope/index.js:399:22)
+    at Scope.registerBinding (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/traverse/lib/scope/index.js:535:16)
+    at Scope.registerDeclaration (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/traverse/lib/scope/index.js:480:12)
+    at Object.BlockScoped (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/traverse/lib/scope/index.js:254:12)
+    at Object.newFn (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/traverse/lib/visitors.js:192:17)
+    at NodePath._call (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/traverse/lib/path/context.js:46:20)
+    at NodePath.call (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/traverse/lib/path/context.js:32:14)
+    at NodePath.visit (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/traverse/lib/path/context.js:82:31)
+    at TraversalContext.visitQueue (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/traverse/lib/context.js:86:16)
 -------------------|---------|----------|---------|---------|----------------------------------------------------
 File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                  
 -------------------|---------|----------|---------|---------|----------------------------------------------------
@@ -297,5 +297,5 @@ All files          |   27.27 |     9.23 |   21.15 |    27.6 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.427 s
+Time:        2.976 s
 Ran all test suites.
