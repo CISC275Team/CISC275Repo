@@ -12,7 +12,7 @@
         at header
         at div
         at div
-        at App (/home/runner/work/CISC275Repo/CISC275Repo/src/App.tsx:16:47)
+        at App (/home/runner/work/CISC275Repo/CISC275Repo/src/App.tsx:36:49)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -29,7 +29,7 @@
         at header
         at div
         at div
-        at App (/home/runner/work/CISC275Repo/CISC275Repo/src/App.tsx:16:47)
+        at App (/home/runner/work/CISC275Repo/CISC275Repo/src/App.tsx:36:49)
 
       at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
       at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
@@ -40,7 +40,7 @@
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (108 ms)
+  ✕ renders the course name somewhere (99 ms)
 
   ● renders the course name somewhere
 
@@ -123,108 +123,52 @@ FAIL src/App.test.tsx
                 [36m</div>[39m
               [36m</div>[39m
             [36m</div>[39m
-            [36m<div />[39m
-            [36m<a[39m
-              [33mdownload[39m=[32m"testexport"[39m
-              [33mhref[39m=[32m"data:text/csv;charset=utf-8,﻿\"First Name\",\"Last Name\"
-    \"Nicky\",\"Reigel\"
-    \"Aidan\",\"Bell\""[39m
-              [33mtarget[39m=[32m"_self"[39m
-            [36m>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"btn btn-primary"[39m
-                [33mtype[39m=[32m"button"[39m
-              [36m>[39m
-                [0mDownload CSV[0m
-              [36m</button>[39m
-            [36m</a>[39m
-            [36m<div />[39m
-            [36m<div[39m
-              [33mstyle[39m=[32m"text-align: center;"[39m
-            [36m>[39m
-              [36m<h1>[39m
-                [0mCSV Degree Plan Import:[0m
-              [36m</h1>[39m
-              [36m<form>[39m
-                [36m<input[39m
-                  [33maccept[39m=[32m".csv"[39m
-                  [33mtype[39m=[32m"file"[39m
-                [36m/>[39m
-                [36m<button[39m
-                  [33mtype[39m=[32m"button"[39m
-                [36m>[39m
-                  [0mImport[0m
-                [36m</button>[39m
-              [36m</form>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"div-alightleft"[39m
-            [36m>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"App-blockleft"[39m
-              [36m>[39m
-                [36m<p>[39m
-                  [0msample block left[0m
-                [36m</p>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"div-alignright"[39m
-            [36m>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"App-blockright"[39m
-              [36m>[39m
-                [36m<p>[39m
-                  [0msample block right[0m
-                [36m</p>[39m
-              [36m</div>[39m
-            [36m</div>[39m
             [36m<button[39m
               [33mclass[39m=[32m"add_btn btn btn-primary"[39m
               [33mtype[39m=[32m"button"[39m
             [36m>[39m
               [0mAdd New Degree Plan[0m
             [36m</button>[39m
-            [36m<div />[39m
             [36m<button[39m
               [33mclass[39m=[32m"btn btn-primary"[39m
               [33mtype[39m=[32m"button"[39m
             [36m>[39m
               [0mSave Degree Plans[0m
             [36m</button>[39m
-          [36m</div>[39m
-          [36m<div>[39m
-            [36m<h1>[39m
-              [0mSemester Tracker[0m
-            [36m</h1>[39m
             [36m<div>[39m
-              [36m<select>[39m
-                [36m<option[39m
-                  [33mvalue[39m=[32m"Fall"[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"text-align: center;"[39m
+              [36m>[39m
+                [36m<h1>[39m
+                  [0mCSV Degree Plan Import:[0m
+                [36m</h1>[39m
+                [36m<form>[39m
+                  [36m<input[39m
+                    [33maccept[39m=[32m".csv"[39m
+                    [33mtype[39m=[32m"file"[39m
+                  [36m/>[39m
+                  [36m<button[39m
+                    [33mtype[39m=[32m"button"[39m
+                  [36m>[39m
+                    [0mImport[0m
+                  [36m</button>[39m
+                [36m</form>[39m
+              [36m</div>[39m
+              [36m<a[39m
+                [33mdownload[39m=[32m"testexport"[39m
+                [33mhref[39m=[32m"data:text/csv;charset=utf-8,﻿\"First Name\",\"Last Name\"
+    \"Nicky\",\"Reigel\"
+    \"Aidan\",\"Bell\""[39m
+                [33mtarget[39m=[32m"_self"[39m
+              [36m>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
                 [36m>[39m
-                  [0mFall[0m
-                [36m</option>[39m
-                [36m<option[39m
-                  [33mvalue[39m=[32m"Winter"[39m
-                [36m>[39m
-                  [0mWinter[0m
-                [36m</option>[39m
-                [36m<option[39m
-                  [33mvalue[39m=[32m"Spring"[39m
-                [36m>[39m
-                  [0mSpring[0m
-                [36m</option>[39m
-                [36m<option[39m
-                  [33mvalue[39m=[32m"Summer"[39m
-                [36m>[39m
-                  [0mSummer[0m
-                [36m</option>[39m
-              [36m</select>[39m
-              [36m<button>[39m
-                [0mAdd Semester[0m
-              [36m</button>[39m
+                  [0mDownload CSV[0m
+                [36m</button>[39m
+              [36m</a>[39m
             [36m</div>[39m
-            [36m<ul />[39m
           [36m</div>[39m
         [36m</div>[39m
       [36m</div>[39m
@@ -248,54 +192,27 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
-Failed to collect coverage from /home/runner/work/CISC275Repo/CISC275Repo/src/Semester.tsx
-ERROR: Duplicate declaration "Semester"
-  4 | import { Semester } from "./interfaces/semester";
-  5 |
-> 6 | function Semester({
-    |          ^^^^^^^^
-  7 |     semester,
-  8 |     deleteSemester
-  9 | }: {
-STACK: TypeError: Duplicate declaration "Semester"
-  4 | import { Semester } from "./interfaces/semester";
-  5 |
-> 6 | function Semester({
-    |          ^^^^^^^^
-  7 |     semester,
-  8 |     deleteSemester
-  9 | }: {
-    at File.buildCodeFrameError (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/core/lib/transformation/file/file.js:249:12)
-    at Scope.checkBlockScopedCollisions (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/traverse/lib/scope/index.js:399:22)
-    at Scope.registerBinding (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/traverse/lib/scope/index.js:535:16)
-    at Scope.registerDeclaration (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/traverse/lib/scope/index.js:480:12)
-    at Object.BlockScoped (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/traverse/lib/scope/index.js:254:12)
-    at Object.newFn (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/traverse/lib/visitors.js:192:17)
-    at NodePath._call (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/traverse/lib/path/context.js:46:20)
-    at NodePath.call (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/traverse/lib/path/context.js:32:14)
-    at NodePath.visit (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/traverse/lib/path/context.js:82:31)
-    at TraversalContext.visitQueue (/home/runner/work/CISC275Repo/CISC275Repo/node_modules/@babel/traverse/lib/context.js:86:16)
--------------------|---------|----------|---------|---------|----------------------------------------------------
-File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                  
--------------------|---------|----------|---------|---------|----------------------------------------------------
-All files          |   27.27 |     9.23 |   21.15 |    27.6 |                                                    
- src               |   27.27 |     9.23 |   21.15 |    27.6 |                                                    
-  AddDpModal.tsx   |      50 |      100 |   33.33 |      50 | 19-20,36                                           
-  App.tsx          |   43.33 |    13.33 |   11.11 |   44.82 | 29-35,39-51,64-67,71-77,98,106,120-139,197,209-275 
-  CSV.tsx          |   38.46 |    14.28 |      40 |   38.46 | 46-53,58                                           
-  DpCard.tsx       |      75 |      100 |   66.66 |      75 | 24                                                 
-  DpList.tsx       |   66.66 |       75 |      50 |   66.66 | 10,13,20                                           
-  DpView.tsx       |       0 |      100 |       0 |       0 | 17-52                                              
-  ImportExport.tsx |       0 |        0 |       0 |       0 | 5-24                                               
-  Name.tsx         |   66.66 |      100 |      50 |   66.66 | 8                                                  
-  courseList.tsx   |       0 |        0 |     100 |       0 | 4-555                                              
- src/interfaces    |       0 |        0 |       0 |       0 |                                                    
-  course.ts        |       0 |        0 |       0 |       0 |                                                    
-  degreeplan.ts    |       0 |        0 |       0 |       0 |                                                    
-  semester.ts      |       0 |        0 |       0 |       0 |                                                    
--------------------|---------|----------|---------|---------|----------------------------------------------------
+---------------------------------|---------|----------|---------|---------|--------------------------------------------------
+File                             | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                
+---------------------------------|---------|----------|---------|---------|--------------------------------------------------
+All files                        |   25.86 |     8.95 |   19.64 |   26.16 |                                                  
+ src                             |   25.86 |     8.95 |   19.64 |   26.16 |                                                  
+  AddDpSemestersCoursesModal.tsx |   25.53 |        0 |     7.4 |   25.53 | 34-53,57-70,83-86,90-109,112-120,136-145,158-236 
+  App.tsx                        |   60.71 |    33.33 |   28.57 |   65.38 | 25,33,46-64                                      
+  CSV.tsx                        |   38.46 |    14.28 |      40 |   38.46 | 46-53,58                                         
+  DpCard.tsx                     |      75 |      100 |   66.66 |      75 | 24                                               
+  DpList.tsx                     |   66.66 |       75 |      50 |   66.66 | 10,13,20                                         
+  DpView.tsx                     |       0 |      100 |       0 |       0 | 17-52                                            
+  ImportExport.tsx               |       0 |        0 |       0 |       0 | 5-24                                             
+  Name.tsx                       |   66.66 |      100 |      50 |   66.66 | 8                                                
+  courseList.tsx                 |       0 |        0 |     100 |       0 | 4-555                                            
+ src/interfaces                  |       0 |        0 |       0 |       0 |                                                  
+  course.ts                      |       0 |        0 |       0 |       0 |                                                  
+  degreeplan.ts                  |       0 |        0 |       0 |       0 |                                                  
+  semester.ts                    |       0 |        0 |       0 |       0 |                                                  
+---------------------------------|---------|----------|---------|---------|--------------------------------------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.976 s
+Time:        3.118 s
 Ran all test suites.
