@@ -40,7 +40,7 @@
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (99 ms)
+  ✕ renders the course name somewhere (129 ms)
 
   ● renders the course name somewhere
 
@@ -195,14 +195,14 @@ FAIL src/App.test.tsx
 ---------------------------------|---------|----------|---------|---------|--------------------------------------------------
 File                             | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                
 ---------------------------------|---------|----------|---------|---------|--------------------------------------------------
-All files                        |   25.86 |     8.95 |   19.64 |   26.16 |                                                  
- src                             |   25.86 |     8.95 |   19.64 |   26.16 |                                                  
+All files                        |      25 |     8.95 |   18.64 |   25.42 |                                                  
+ src                             |      25 |     8.95 |   18.64 |   25.42 |                                                  
   AddDpSemestersCoursesModal.tsx |   25.53 |        0 |     7.4 |   25.53 | 34-53,57-70,83-86,90-109,112-120,136-145,158-236 
-  App.tsx                        |   60.71 |    33.33 |   28.57 |   65.38 | 25,33,46-64                                      
+  App.tsx                        |   54.83 |    33.33 |   22.22 |   60.71 | 25,33,46-69                                      
   CSV.tsx                        |   38.46 |    14.28 |      40 |   38.46 | 46-53,58                                         
   DpCard.tsx                     |      75 |      100 |   66.66 |      75 | 24                                               
-  DpList.tsx                     |   66.66 |       75 |      50 |   66.66 | 10,13,20                                         
-  DpView.tsx                     |       0 |      100 |       0 |       0 | 17-52                                            
+  DpList.tsx                     |   66.66 |       75 |      50 |   66.66 | 16,19,26                                         
+  DpView.tsx                     |       0 |      100 |       0 |       0 | 19-58                                            
   ImportExport.tsx               |       0 |        0 |       0 |       0 | 5-24                                             
   Name.tsx                       |   66.66 |      100 |      50 |   66.66 | 8                                                
   courseList.tsx                 |       0 |        0 |     100 |       0 | 4-555                                            
@@ -214,5 +214,5 @@ All files                        |   25.86 |     8.95 |   19.64 |   26.16 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.118 s
+Time:        2.941 s
 Ran all test suites.
