@@ -40,7 +40,7 @@
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (129 ms)
+  ✕ renders the course name somewhere (132 ms)
 
   ● renders the course name somewhere
 
@@ -195,9 +195,9 @@ FAIL src/App.test.tsx
 ---------------------------------|---------|----------|---------|---------|--------------------------------------------------
 File                             | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                
 ---------------------------------|---------|----------|---------|---------|--------------------------------------------------
-All files                        |      25 |     8.95 |   18.64 |   25.42 |                                                  
- src                             |      25 |     8.95 |   18.64 |   25.42 |                                                  
-  AddDpSemestersCoursesModal.tsx |   25.53 |        0 |     7.4 |   25.53 | 34-53,57-70,83-86,90-109,112-120,136-145,158-236 
+All files                        |   24.86 |     8.95 |   18.64 |   25.28 |                                                  
+ src                             |   24.86 |     8.95 |   18.64 |   25.28 |                                                  
+  AddDpSemestersCoursesModal.tsx |      25 |        0 |     7.4 |      25 | 34-53,57-70,83-86,94-114,117-125,141-150,163-242 
   App.tsx                        |   54.83 |    33.33 |   22.22 |   60.71 | 25,33,46-69                                      
   CSV.tsx                        |   38.46 |    14.28 |      40 |   38.46 | 46-53,58                                         
   DpCard.tsx                     |      75 |      100 |   66.66 |      75 | 24                                               
@@ -214,5 +214,5 @@ All files                        |      25 |     8.95 |   18.64 |   25.42 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.941 s
+Time:        2.943 s
 Ran all test suites.
