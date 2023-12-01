@@ -23,6 +23,11 @@ export function AddDpSemestersCoursesModal({
     const [selectedSemesterId, setSelectedSemesterId] = useState<number | null>(
         null
     );
+    const courseDataFile = localStorage.getItem("catalog.json");
+    let courseData: { [key: string]: { [key: string]: Course } } = {};
+    if (courseDataFile !== null) {
+        courseData = JSON.parse(courseDataFile);
+    }
 
     const [selectedCourseCode, setSelectedCourseCode] = useState<string>("");
     const [, setNewCourse] = useState<Course>({
@@ -73,6 +78,7 @@ export function AddDpSemestersCoursesModal({
     }
 
     const addCourse = (semesterId: number) => {
+        JSON.parse("./catalog.json");
         if (selectedSemesterId !== null && selectedCourseCode) {
             const selectedCourse = courseList.find(
                 (course) => course.courseCode === selectedCourseCode
