@@ -140,6 +140,7 @@ export function App(): JSX.Element {
                             <Import
                                 importData={importData}
                                 setImportData={setImportData}
+                                addDp={addDp}
                             />
                             <GenerateCSV
                                 data={[
