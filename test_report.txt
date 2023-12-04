@@ -40,7 +40,7 @@
       at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
 
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (92 ms)
+  ✕ renders the course name somewhere (132 ms)
 
   ● renders the course name somewhere
 
@@ -143,6 +143,8 @@ FAIL src/App.test.tsx
                   [0mCSV Degree Plan Import:[0m
                 [36m</h1>[39m
                 [36m<form>[39m
+                  [0m [0m
+                  [36m<div />[39m
                   [36m<input[39m
                     [33maccept[39m=[32m".csv"[39m
                     [33mtype[39m=[32m"file"[39m
@@ -195,11 +197,11 @@ FAIL src/App.test.tsx
 ---------------------------------|---------|----------|---------|---------|------------------------------------------------------------------
 File                             | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                
 ---------------------------------|---------|----------|---------|---------|------------------------------------------------------------------
-All files                        |   38.72 |    23.25 |   11.45 |   39.46 |                                                                  
- src                             |   38.72 |    23.25 |   11.45 |   39.46 |                                                                  
+All files                        |   36.45 |     20.2 |   13.13 |   37.04 |                                                                  
+ src                             |   36.45 |     20.2 |   13.13 |   37.04 |                                                                  
   AddDpSemestersCoursesModal.tsx |      25 |        0 |    6.66 |      25 | 39-41,53-72,76-92,98-101,109-130,136-150,154-161,175-184,197-273 
   App.tsx                        |   51.51 |       25 |   18.18 |   56.66 | 25,33,46-75                                                      
-  CSV.tsx                        |   38.46 |    14.28 |      40 |   38.46 | 46-53,58                                                         
+  CSV.tsx                        |   26.31 |        5 |      50 |   26.31 | 43-53,61-73,84-125,156-164,169-170                               
   DpCard.tsx                     |      75 |      100 |   66.66 |      75 | 24                                                               
   DpList.tsx                     |   66.66 |       75 |      50 |   66.66 | 18,21,28                                                         
   DpView.tsx                     |       0 |      100 |       0 |       0 | 22-67                                                            
@@ -215,5 +217,5 @@ All files                        |   38.72 |    23.25 |   11.45 |   39.46 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.216 s
+Time:        3.05 s
 Ran all test suites.
