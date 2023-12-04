@@ -2,45 +2,8 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test --coverage
 
-  console.error
-    Warning: validateDOMNesting(...): <div> cannot appear as a descendant of <p>.
-        at div
-        at /home/runner/work/CISC275Repo/CISC275Repo/node_modules/react-bootstrap/cjs/FormGroup.js:19:3
-        at div
-        at WelcomeMessage (/home/runner/work/CISC275Repo/CISC275Repo/src/Name.tsx:5:37)
-        at p
-        at header
-        at div
-        at div
-        at App (/home/runner/work/CISC275Repo/CISC275Repo/src/App.tsx:36:49)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at validateDOMNesting (node_modules/react-dom/cjs/react-dom.development.js:10083:7)
-      at createInstance (node_modules/react-dom/cjs/react-dom.development.js:10181:5)
-      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:19464:28)
-      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
-      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
-
-  console.error
-    Warning: validateDOMNesting(...): <ul> cannot appear as a descendant of <p>.
-        at ul
-        at p
-        at header
-        at div
-        at div
-        at App (/home/runner/work/CISC275Repo/CISC275Repo/src/App.tsx:36:49)
-
-      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:67:30)
-      at error (node_modules/react-dom/cjs/react-dom.development.js:43:5)
-      at validateDOMNesting (node_modules/react-dom/cjs/react-dom.development.js:10083:7)
-      at createInstance (node_modules/react-dom/cjs/react-dom.development.js:10181:5)
-      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:19464:28)
-      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22812:16)
-      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:22787:5)
-
 FAIL src/App.test.tsx
-  ✕ renders the course name somewhere (132 ms)
+  ✕ renders the course name somewhere (43 ms)
 
   ● renders the course name somewhere
 
@@ -50,128 +13,77 @@ FAIL src/App.test.tsx
     [36m<body>[39m
       [36m<div>[39m
         [36m<div>[39m
-          [36m<div[39m
-            [33mclass[39m=[32m"App"[39m
-          [36m>[39m
-            [36m<header[39m
-              [33mclass[39m=[32m"App-header"[39m
-            [36m>[39m
-              [0mUniversity of Delaware Computer Science Degree Plan[0m
-              [36m<p>[39m
-                [36m<div>[39m
-                  [36m<div>[39m
-                    [36m<label[39m
-                      [33mclass[39m=[32m"form-label"[39m
-                      [33mfor[39m=[32m"formStudent"[39m
-                    [36m>[39m
-                      [0mName:[0m
-                    [36m</label>[39m
-                    [36m<input[39m
-                      [33mclass[39m=[32m"form-control"[39m
-                      [33mid[39m=[32m"formStudent"[39m
-                      [33mvalue[39m=[32m"New Student"[39m
-                    [36m/>[39m
-                  [36m</div>[39m
-                  [36m<div>[39m
-                    [0mWelcome [0m
-                    [0mNew Student[0m
-                    [0m, here you will create you potential class schedule.[0m
-                  [36m</div>[39m
-                [36m</div>[39m
-              [36m</p>[39m
-              [36m<p>[39m
-                [36m<ul[39m
-                  [33mclass[39m=[32m"horizontal-list"[39m
-                [36m>[39m
-                  [36m<li>[39m
-                    [0m Aidan Bell [0m
-                  [36m</li>[39m
-                  [36m<li>[39m
-                    [0mLawrence Collins [0m
-                  [36m</li>[39m
-                  [36m<li>[39m
-                    [0mNicky Reigel[0m
-                  [36m</li>[39m
-                  [36m<li>[39m
-                    [0mMelvin Rau[0m
-                  [36m</li>[39m
-                  [36m<li>[39m
-                    [0mVictor Vasquez[0m
-                  [36m</li>[39m
-                [36m</ul>[39m
-              [36m</p>[39m
-            [36m</header>[39m
+          [36m<div>[39m
             [36m<div>[39m
-              [36m<div>[39m
+              [36m<label[39m
+                [33mclass[39m=[32m"form-label"[39m
+                [33mfor[39m=[32m"formStudent"[39m
+              [36m>[39m
+                [0mName:[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mclass[39m=[32m"form-control"[39m
+                [33mid[39m=[32m"formStudent"[39m
+                [33mvalue[39m=[32m"*Please enter your name here*"[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"BT"[39m
+            [36m>[39m
+              [0mWelcome [0m
+              [0m*Please enter your name here*[0m
+              [0m, here you will create you potential class schedule. You will have to choose your courses to fill out a complete degree plan. You have the option to include both winter and summer course but you do not have to include them.[0m
+              [36m<p[39m
+                [33mclass[39m=[32m"BT"[39m
+              [36m>[39m
+                [0mHere is a sample degree plan that will give you an idea of how this will work.[0m
+              [36m</p>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div>[39m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"d-flex justify-content-center align-items-center"[39m
+              [36m>[39m
                 [36m<div[39m
-                  [33mclass[39m=[32m"d-flex justify-content-center align-items-center"[39m
+                  [33mclass[39m=[32m"card bg-primary text-light"[39m
+                  [33mstyle[39m=[32m"width: 25rem;"[39m
                 [36m>[39m
                   [36m<div[39m
-                    [33mclass[39m=[32m"card bg-primary text-light"[39m
-                    [33mstyle[39m=[32m"width: 25rem;"[39m
+                    [33mclass[39m=[32m"card-body"[39m
                   [36m>[39m
                     [36m<div[39m
-                      [33mclass[39m=[32m"card-body"[39m
+                      [33mclass[39m=[32m"card-title h5"[39m
                     [36m>[39m
-                      [36m<div[39m
-                        [33mclass[39m=[32m"card-title h5"[39m
-                      [36m>[39m
-                        [0mDegree Plan 1[0m
-                      [36m</div>[39m
+                      [0mDegree Plan 1[0m
                     [36m</div>[39m
                   [36m</div>[39m
                 [36m</div>[39m
               [36m</div>[39m
             [36m</div>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"add_btn btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mAdd New Degree Plan[0m
-            [36m</button>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mSave Degree Plans[0m
-            [36m</button>[39m
-            [36m<div>[39m
-              [36m<div[39m
-                [33mstyle[39m=[32m"text-align: center;"[39m
-              [36m>[39m
-                [36m<h1>[39m
-                  [0mCSV Degree Plan Import:[0m
-                [36m</h1>[39m
-                [36m<form>[39m
-                  [0m [0m
-                  [36m<div />[39m
-                  [36m<input[39m
-                    [33maccept[39m=[32m".csv"[39m
-                    [33mtype[39m=[32m"file"[39m
-                  [36m/>[39m
-                  [36m<button[39m
-                    [33mtype[39m=[32m"button"[39m
-                  [36m>[39m
-                    [0mImport[0m
-                  [36m</button>[39m
-                [36m</form>[39m
-              [36m</div>[39m
-              [36m<a[39m
-                [33mdownload[39m=[32m"testexport"[39m
-                [33mhref[39m=[32m"data:text/csv;charset=utf-8,﻿\"First Name\",\"Last Name\"
-    \"Nicky\",\"Reigel\"
-    \"Aidan\",\"Bell\""[39m
-                [33mtarget[39m=[32m"_self"[39m
-              [36m>[39m
-                [36m<button[39m
-                  [33mclass[39m=[32m"btn btn-primary"[39m
-                  [33mtype[39m=[32m"button"[39m
-                [36m>[39m
-                  [0mDownload CSV[0m
-                [36m</button>[39m
-              [36m</a>[39m
-            [36m</div>[39m
           [36m</div>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"link_wrapper btn btn-primary"[39m
+            [33mtype[39m=[32m"button"[39m
+          [36m>[39m
+            [36m<a[39m
+              [33mhref[39m=[32m"#"[39m
+            [36m>[39m
+              [0mContinue to Site![0m
+            [36m</a>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"icon"[39m
+            [36m>[39m
+              [36m<svg[39m
+                [33mviewBox[39m=[32m"0 0 268.832 268.832"[39m
+                [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+              [36m>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"[39m
+                [36m/>[39m
+              [36m</svg>[39m
+            [36m</div>[39m
+          [36m</button>[39m
         [36m</div>[39m
       [36m</div>[39m
     [36m</body>[39m
@@ -194,28 +106,28 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
----------------------------------|---------|----------|---------|---------|------------------------------------------------------------------
-File                             | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                
----------------------------------|---------|----------|---------|---------|------------------------------------------------------------------
-All files                        |   36.45 |     20.2 |   13.13 |   37.04 |                                                                  
- src                             |   36.45 |     20.2 |   13.13 |   37.04 |                                                                  
-  AddDpSemestersCoursesModal.tsx |      25 |        0 |    6.66 |      25 | 39-41,53-72,76-92,98-101,109-130,136-150,154-161,175-184,197-273 
-  App.tsx                        |   51.51 |       25 |   18.18 |   56.66 | 25,33,46-75                                                      
-  CSV.tsx                        |   26.31 |        5 |      50 |   26.31 | 43-53,61-73,84-125,156-164,169-170                               
-  DpCard.tsx                     |      75 |      100 |   66.66 |      75 | 24                                                               
-  DpList.tsx                     |   66.66 |       75 |      50 |   66.66 | 18,21,28                                                         
-  DpView.tsx                     |       0 |      100 |       0 |       0 | 22-67                                                            
-  EditingDp.tsx                  |       0 |        0 |       0 |       0 | 22-261                                                           
-  ImportExport.tsx               |       0 |        0 |       0 |       0 | 5-24                                                             
-  Name.tsx                       |   66.66 |      100 |      50 |   66.66 | 8                                                                
-  courseList.tsx                 |     100 |    43.75 |     100 |     100 | 43-540                                                           
- src/interfaces                  |       0 |        0 |       0 |       0 |                                                                  
-  course.ts                      |       0 |        0 |       0 |       0 |                                                                  
-  degreeplan.ts                  |       0 |        0 |       0 |       0 |                                                                  
-  semester.ts                    |       0 |        0 |       0 |       0 |                                                                  
----------------------------------|---------|----------|---------|---------|------------------------------------------------------------------
+---------------------------------|---------|----------|---------|---------|-------------------
+File                             | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+---------------------------------|---------|----------|---------|---------|-------------------
+All files                        |   26.83 |     19.8 |       7 |   27.27 |                   
+ src                             |   26.83 |     19.8 |       7 |   27.27 |                   
+  AddDpSemestersCoursesModal.tsx |       0 |        0 |       0 |       0 | 20-273            
+  App.tsx                        |   52.77 |       30 |   16.66 |   57.57 | 25,33,47-70,73-79 
+  CSV.tsx                        |       0 |        0 |       0 |       0 | 25-177            
+  DpCard.tsx                     |      75 |      100 |   66.66 |      75 | 24                
+  DpList.tsx                     |   66.66 |       75 |      50 |   66.66 | 18,21,28          
+  DpView.tsx                     |       0 |      100 |       0 |       0 | 22-67             
+  EditingDp.tsx                  |       0 |        0 |       0 |       0 | 22-261            
+  ImportExport.tsx               |       0 |        0 |       0 |       0 | 5-24              
+  Name.tsx                       |   66.66 |      100 |      50 |   66.66 | 10                
+  courseList.tsx                 |     100 |    43.75 |     100 |     100 | 43-540            
+ src/interfaces                  |       0 |        0 |       0 |       0 |                   
+  course.ts                      |       0 |        0 |       0 |       0 |                   
+  degreeplan.ts                  |       0 |        0 |       0 |       0 |                   
+  semester.ts                    |       0 |        0 |       0 |       0 |                   
+---------------------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.05 s
+Time:        3.02 s
 Ran all test suites.
