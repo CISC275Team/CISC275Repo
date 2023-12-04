@@ -1,7 +1,7 @@
 /* eslint-disable no-extra-parens */
 import React, { useState } from "react";
-import "./App.css";
 //I needed to download the package using "npm install @types/react-csv"
+import "./App.css";
 import { CSVLink } from "react-csv";
 import { Button } from "react-bootstrap";
 import { DegreePlan } from "./interfaces/degreeplan";
@@ -23,7 +23,7 @@ export function GenerateCSV({
     filename: string;
 }): JSX.Element {
     return (
-        <CSVLink data={data} filename={filename}>
+        <CSVLink className="ignore-css" data={data} filename={filename}>
             <Button>Download CSV</Button>
         </CSVLink>
     );

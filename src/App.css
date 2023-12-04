@@ -162,3 +162,6 @@ a:hover + .icon {
     right: -25%;
     background-color: transparent;
 }
+.ignore-css {
+    all: unset;
+}
